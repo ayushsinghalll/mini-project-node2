@@ -1,0 +1,40 @@
+<%-include('../includes/head.ejs')%>
+<link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+<%-include('../includes/navigation.ejs')%>
+<div class="container">
+    <%if(prods.length>0){%>
+    <div class="row py-5">
+        <%for(let product of prods){%>
+        <div class="col-10 col-md-6 col-lg-4 mx-auto my-3">
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="../images/apartment-one.png" alt="property image" class="card-img-top"/>
+                    <div class="featured-icons">
+                        <a href="#" class="featured-icon-left"> <i class="fas fa-chevron-left"></i> </a>
+                        <a href="#" class="featured-icon-right"> <i class="fas fa-chevron-right"></i> </a>
+                    </div>
+                </div>
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="card-title text-capitalize">
+                        <h5 class="mb-3">excellent property in <%=product.City%></h5>
+                        <p> <span class="text-green"> <i class="fas fa-map-marker-alt"></i> </span>
+                            <%=product.HouseName%> <%=product.Colony%> <%=product.Street%> , <%=product.District%> <%=product.Pincode%>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer text-center" id="user-card-footer">
+                    <a href="/user-details/<%= product._id %>" class="btn btn-primary mx-auto">Details</a>
+                </div>
+            </div>
+        </div>
+        <%}%>
+    </div>
+<%}else{%>
+<h1>NO produt Found!1</h1>
+<%}%>
+</div>
+<%-include('../includes/end.ejs')%>

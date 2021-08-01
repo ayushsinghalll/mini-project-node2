@@ -1,20 +1,31 @@
-const mongodb=require('mongodb');
+const mongoose=require('mongoose')
+
+const Schema=mongoose.Schema
+
+const userSchema=new Schema({
+    username:{
+        type:String,
+        required:true
+    },
+    email:
+        {
+            type:String,
+            required:true
+        },
+    password:{
+        type:String,
+        required:true
+    },
+
+    phoneno:{
+        type:Number,
+        required:true
+    },
+    resetToken:String,
+    resetTokenExpiration:Date,
+
+})
 
 
-const ObjectId=mongodb.ObjectId
-class User{
-    constructor(username,email) {
-        this.name=username
-        this.email=email
-    }
-    save(){
-        const db=getDb()
-        return db.collection('user').insertOne(this)
-    }
+module.exports = mongoose.model('User', userSchema)
 
-    static findById(userId){
-         const db=getDb()
-        return db.collection('users').findOne({_id: new ObjectId(userId)});
-    }
-}
-module.exports=User

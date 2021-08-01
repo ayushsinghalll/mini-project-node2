@@ -1,0 +1,84 @@
+<%-include('../includes/head.ejs')%>
+<link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+<%-include('../includes/navigation.ejs')%>
+<div class="container py-3">
+    <div class="row">
+        <div class="col-10 col-md-6 col-lg-5 mx-auto  my-3">
+            <div id="customers" class="owl-carousel owl-theme">
+                <div >
+                    <img src="../images/featured-1.jpeg" class="img-fluid" width="30" height="20" alt="house-img">
+
+                </div>
+                <div class="customer text-center">
+                    <img src="../images/featured-2.jpeg" alt="house-img" class="img-fluid" width="30" height="20">
+
+                </div>
+                <div class="customer text-center">
+                    <img src="../images/featured-3.jpeg" alt="house-img" class="img-fluid " width="30" height="20">
+                </div>
+            </div>
+            <div class="card-footer mx-auto">
+                <div class="row">
+                    <div class="col-6 mx-auto">
+                        <a class="btn btn-primary mx-auto" href="#" data-toggle="modal" data-target="#contact-model">
+                            Contact
+                        </a>
+                    </div>
+                    <div class="col-6 mx-auto">
+                        <a href="https://rzp.io/i/elo4GXTT" class="btn btn-success">Book</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-10 col-md-6 col-lg-5 mx-auto  my-3 ">
+         
+            <h3>House Details</h3>
+            <h6>House Owner Name: Ayush</h6>
+            <br>
+            <h6>3.5 rating and 360 reviews</h6>
+            <br>
+            <h6>In this house 2 bedroom and 1 Kitchen</h6>
+           <br>
+           <h6>It is beautiful House</h6>
+           <br>
+           
+            <p>price 3500 per month</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="contact-model">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Landlord Information</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../images/avatar.svg" alt="avtar" height="100" width="100"/>
+                            </div>
+                            <div class="col-md-8">
+                                <h6>Name: Ayush Singhal</h6>
+                                <h6>Email: ayush.dilipsinghal@gmail.com</h6>
+                                <h6>Contact: 9520261150</h6>
+                                <h6>Address: Cement Road Saray Gali Sonkh</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%-include('../includes/end.ejs')%>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>User</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a href="../index.html" class="navbar-brand"> <img src="../images/logo.png" alt="company logo"/> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mx-5 mx-auto ">
+            <li class="nav-item ">
+                <a href="./admin-index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">Add Landlord</a>
+            </li>
+            <li class="nav-item ">
+                <a href="./view-landlord.html" class="nav-link">View Landlord</a>
+            </li>
+            <li class="nav-item ">
+                <a href="./view-user.html" class="nav-link">View User</a>
+            </li>
+        </ul>
+        <a
+                class="btn btn-default ml-auto nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#avtar">
+            <img src="../images/avatar.svg" alt="avtar" height="50" width="50" class="img-fluid rounded-circle" title="Profile" />
+        </a>
+    </div>
+</nav>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="row row-content">
+                <div class="col-12 py-3">
+                    <h3>Add Landlord</h3>
+                </div>
+                <div class="col-12 col-md-9 py-3">
+                    <form action="/add-landlord" method="post">
+                        <div class="form-group row">
+                            <label for="FirstName" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="LastName" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="Email" name="Email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-md-2 col-form-label">Password</label>
+                            <div class="col-md-10">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="Telephone" class=" col-12 col-md-2 col-form-label">Contact Number</label>
+                            <div class="col-md-10">
+                                <input type="tel" class="form-control" id="Telephone" name="Telephone" placeholder="Contact Number">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+
+                            <div class="col-md-10">
+
+                                <div class="form-group-row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="reset" class="btn btn-primary">
+                                            Reset
+                                        </button>
+                                        <button type="submit" class="btn btn-success" >
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+
+
+
+
+<div class="modal fade" id="avtar">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Already want to leave?</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                It is sad to see you go. Please Press Logout to leave.
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    Stay Here
+                </button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

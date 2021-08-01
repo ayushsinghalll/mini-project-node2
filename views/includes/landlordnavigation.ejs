@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a href="../index.html" class="navbar-brand"> <img src="../images/logo.png" alt="company logo"/> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mx-5 mr-auto ">
+            <li class="nav-item  active">
+                <a href="/landlord-index" class="nav-link <%= path ==='/user-index'?'active' : '' %>">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/landlord-editdetails" class="nav-link <%= path ==='/editprofile-user'?'active' : '' %>">Edit Profile</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/add-house" class="nav-link <%= path ==='/editprofile-user'?'active' : '' %>">Add House</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/edit-house" class="nav-link <%= path ==='/editprofile-user'?'active' : '' %>">View House</a>
+            </li>
+        </ul>
+        <a
+                class="btn btn-default ml-auto nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#avtar">
+            <img src="../images/avatar.svg" alt="avtar" height="50" width="50" class="img-fluid rounded-circle" title="Profile" />
+        </a>
+    </div>
+</nav>

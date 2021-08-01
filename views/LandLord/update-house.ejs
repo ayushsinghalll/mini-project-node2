@@ -1,0 +1,84 @@
+<%-include('../includes/head.ejs')%>
+<link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+<%-include('../includes/landlordnavigation.ejs')%>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="row row-content">
+                <div class="col-12 py-3">
+                    <h3>Update Houses</h3>
+                </div>
+                <div class="col-12 col-md-9">
+                    <form action='/update-house' method="POST">
+                        <div class="form-group row">
+                            <label for="HouseName" class="col-md-2 col-form-label">House Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="HouseName" name="HouseName" placeholder="House Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Colony" class="col-md-2 col-form-label">Colony Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="Colony" name="Colony" placeholder="Colony Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Street" class="col-md-2 col-form-label">Street Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="Street" name="Street" placeholder="Street Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="City" class=" col-12 col-md-2 col-form-label">City </label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="City" name="City" placeholder="City ">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="District" class=" col-12 col-md-2 col-form-label">District</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="District" name="District" placeholder="District">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Pincode" class=" col-12 col-md-2 col-form-label">PinCode</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="Pincode" name="Pincode" placeholder="PinCode">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Price" class=" col-12 col-md-2 col-form-label">House Price</label>
+                            <div class="col-md-10">
+                                <input type="number" class="form-control" id="Price" name="Price" placeholder="House Price">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+
+                            <div class="col-md-10">
+
+                                <div class="form-group-row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="reset" class="btn btn-primary">
+                                            Reset
+                                        </button>
+
+                                            <input type="hidden" value="<%= house._id %>" name="houseId">
+
+                                        <button type="submit" class="btn btn-success" >
+                                            Update
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+</section>
+<%-include('../includes/end.ejs')%>

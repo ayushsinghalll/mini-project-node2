@@ -1,0 +1,53 @@
+<%-include('../includes/head.ejs')%>
+<link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+<%-include('../includes/navigation.ejs')%>
+<div class="container">
+    <div class="'row">
+        <button class="btn" name="order_btn">Order</button>
+        <script src="http://js.stripe.com/v3"></script>
+        <script>
+            var stripe=Stripe('pk_test_51JETioSAy1lvmV50wQss4wrssS5wf4S0WHynsopggwNbwg5exhNoqkX8mITGl1wOxujrTI8utSrx0843AOdi0jXq00599KdgKb')
+            var orderBtn=document.getElementById('order_btn')
+            orderBtn.addEventListener('click',function (){
+                stripe.redirectToCheckout({
+                    sessionId:'<%=sessionId%>'
+                })
+            })
+        </script>
+    </div>
+</div>
+
+<div class="modal fade" id="contact-model">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Landlord Information</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="../images/avatar.svg" alt="avtar" height="100" width="100"/>
+                            </div>
+                            <div class="col-md-8">
+                                <h6>Name: Ayush Singhal</h6>
+                                <h6>Email: ayush.dilipsinghal@gmail.com</h6>
+                                <h6>Contact: 9520261150</h6>
+                                <h6>Address: Cement Road Saray Gali Sonkh</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%-include('../includes/end.ejs')%>

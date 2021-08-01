@@ -1,0 +1,70 @@
+<%-include('../includes/head.ejs')%>
+<link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+<%-include('../includes/landlordnavigation.ejs')%>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="row row-content">
+                <div class="col-12 py-3">
+                    <h3>Edit Details</h3>
+                </div>
+                <div class="col-12 col-md-9 py-3">
+                    <form>
+                        <div class="form-group row">
+                            <label for="FirstName" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="LastName" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="LastName" name="LasstName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="Email" name="Email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Telephone" class=" col-12 col-md-2 col-form-label">Contact Number</label>
+                            <div class="col-md-10">
+                                <input type="tel" class="form-control" id="Telephone" name="Telephone" placeholder="Contact Number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="address" class=" col-12 col-md-2 col-form-label">Address</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+
+                            <div class="col-md-10">
+
+                                <div class="form-group-row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="reset" class="btn btn-primary">
+                                            Reset
+                                        </button>
+                                        <button type="submit" class="btn btn-success" >
+                                            Update
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+</section>
+<%-include('../includes/end.ejs')%>
