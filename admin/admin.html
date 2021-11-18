@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/main.css">
+
+    </head>
+<body>
+    <!--Nav bar-->
+      <!-- navbar -->
+
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <div class="col-6">
+        <img src="../images/logo.png" alt="company logo" class="img-fluid"/>
+        <a class="navbar-brand text-uppercase" href="#">
+          <h3>Alquiler Rent</h3>
+        </a>
+        </div>
+
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+
+        <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+          <ul class="navbar-nav links d-md-none">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                ><i class="fa fa-home text-muted mr-3"></i>Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#"
+                ><i class="fa fa-list mr-3 text-muted"></i>Tenents</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="#"
+                ><i class="fa fa-envelope mr-3 text-muted"></i>Landlords</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#"
+                ><i class="fa fa-desktop mr-3 text-muted"></i>Apartment</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#"
+                ><i class="fa fa-envelope mr-3 text-muted"></i>Admins</a
+              >
+            </li>
+          </ul>
+
+          <!-- nav icons -->
+          <ul class="navbar-nav icons">
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#"> <i class="fa fa-search"></i> </a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#"> <i class="fa fa-bell icon"></i> </a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#">
+                <i class="fa fa-comment icon"></i>
+              </a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="#">
+                <img
+                  src="../images/ayush.jpg"
+                  class="img-fluid rounded-circle img-thumbnail"
+                  alt="Logo"
+                  style="width:30px;"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#sign-out"
+                href="#"
+              >
+                <i class="fa fa-sign-out"></i> Sign Out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav
+          class="col-md-3 col-lg-2 d-none d-md-block sidebar right-padding max-viewport">
+          <a class="navbar-brand py-3" href="#">
+            <img
+              src="../images/ayush.jpg"
+              class="img-fluid rounded-circle img-thumbnail mr-3"
+              alt="Logo"
+              style="width:40px;"
+            />
+            Ayush Singhal
+          </a>
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="fa fa-home text-muted mr-3"></i>Dashboard</a>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link active dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#tenents"><i class="fa fa-home text-muted mr-3"></i>Tenents</a>
+              <ul class="collapse" id="tenents">
+                <li>
+                  <a class="nav-link" href="#">Add User</a>
+                </li>
+                 <li>
+                  <a class="nav-link" href="#">List All </a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav-item">
+               <a class="nav-link active dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#landlords"><i class="fa fa-home text-muted mr-3"></i>LandLords</a>
+              <ul class="collapse" id="landlords">
+                <li>
+                  <a class="nav-link" href="registerLandlord.html">Register New</a>
+                </li>
+                 <li>
+                  <a class="nav-link" href="#">List All </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link active dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#apartments"><i class="fa fa-home text-muted mr-3"></i>Apartments</a>
+              <ul class="collapse" id="apartments">
+                <li>
+                  <a class="nav-link" href="#">Register New </a>
+                </li>
+                 <li>
+                  <a class="nav-link" href="#">List All </a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav-item">
+               <a class="nav-link active dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#house"><i class="fa fa-home text-muted mr-3"></i>Houses</a>
+              <ul class="collapse" id="house">
+                <li>
+                  <a class="nav-link" href="#">List All</a>
+                </li>
+                 <li>
+                  <a class="nav-link" href="#">List Vacant </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">List Occupied </a>
+                </li>
+              </ul>
+
+            </li>
+             <li class="nav-item">
+               <a class="nav-link active dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#deposit"><i class="fa fa-home text-muted mr-3"></i>Deposit Reports</a>
+              <ul class="collapse" id="deposit">
+                <li>
+                  <a class="nav-link" href="#">All Deposit </a>
+                </li>
+                 <li>
+                  <a class="nav-link" href="#">Sort By Apartments </a>
+                </li>
+              </ul>
+
+            </li>
+             <li class="nav-item">
+               <a class="nav-link active dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#invoice"><i class="fa fa-home text-muted mr-3"></i>Invoice</a>
+              <ul class="collapse" id="invoice">
+                <li>
+                  <a class="nav-link" href="#">Prepare Invoice </a>
+                </li>
+                 <li>
+                  <a class="nav-link" href="#">List Invoice</a>
+                </li>
+              </ul>
+
+            </li>
+             <li class="nav-item">
+               <a class="nav-link active dropdown-toggle" data-toggle="collapse" aria-expanded="false" href="#admins"><i class="fa fa-home text-muted mr-3"></i>Admins</a>
+              <ul class="collapse" id="admins">
+                <li>
+                  <a class="nav-link" href="#">List Admins </a>
+                </li>
+                 <li>
+                  <a class="nav-link" href="#">Create Admins </a>
+                </li>
+              </ul>
+
+            </li>
+          </ul>
+        </nav>
+        <!-- end of side bar -->
+       <div class="col-md-9 col-lg-10  bg-light">
+          <!-- cards row -->
+
+          <div class="row inform-card">
+            <div class="col-lg-3 col-md-6 col-10 mx-auto my-5">
+              <div class="card">
+                <div class="card-body">
+                  <div class="flex d-flex justify-content-between">
+                    <i class="fa fa-home body-icon"></i>
+                    <div class="side-text align-self-right">
+                      <h3>20 Registered</h3>
+                      <h5>Tenents</h5>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-10 mx-auto my-5">
+              <div class="card card-2">
+                <div class="card-body">
+                  <div class="flex d-flex justify-content-between">
+                    <i class="fa fa-users body-icon"></i>
+                    <div class="side-text align-self-center">
+                      <h3>10 Registered</h3>
+                      <h5>landlords</h5>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-10 mx-auto my-5">
+              <div class="card card-3">
+                <div class="card-body">
+                  <div class="flex d-flex justify-content-between">
+                    <i class="fa fa-envelope  body-icon"></i>
+                    <div class="side-text align-self-center">
+                      <h3>20 Managed</h3>
+                      <h5>Properties</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-10 mx-auto my-5">
+              <div class="card card-4">
+                <div class="card-body">
+                  <div class="flex d-flex justify-content-between">
+                    <i class="fa fa-suitcase  body-icon"></i>
+                    <div class="side-text align-self-center">
+                      <h3>20 House</h3>
+                      <h5>Units</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+               <div class=" col-12 col-sm-6">
+                <div class="card">
+                    <h3 class="card-header bg-primary text-white">Latest Unpaid Invoice</h3>
+                    <div class="card-body">
+                        <ul class="row">
+                          <ul class="list-unstyled col-3">
+                             <li>Invoice Id </li>
+                             <li>255</li>
+                             <li>2569</li>
+                             <li>2556</li>
+                             <li>2579</li>
+                             <li>2589</li>
+                             <li>25219</li>
+                          </ul>
+
+                          <ul class="list-unstyled col-3">
+                             <li>Invoiced To</li>
+                             <li>Ayush</li>
+                             <li>Chaman</li>
+                              <li>Anurag</li>
+                             <li>Amit</li>
+                              <li>Krishna</li>
+                             <li>Deepu</li>
+                          </ul>
+
+                          <ul class="list-unstyled col-3">
+                             <li>For Months</li>
+                             <li>1</li>
+                             <li>2</li>
+                             <li>8</li>
+                             <li>7</li>
+                             <li>2</li>
+                             <li>5</li>
+                          </ul>
+
+                          <ul class="list-unstyled col-2">
+                             <li>Total</li>
+                             <li>10000</li>
+                             <li>20000</li>
+                             <li>80000</li>
+                             <li>70000</li>
+                             <li>20000</li>
+                             <li>50000</li>
+                          </ul>
+                          </ul>
+
+                    </div>
+                    <div class="footer">
+                      <a class="btn justify-content-center" href="#">View All</a>
+                    </div>
+                </div>
+
+            </div>
+               <div class=" col-12 col-sm-6">
+                <div class="card">
+                    <h3 class="card-header bg-primary text-white">Latest Tenents</h3>
+                    <div class="card-body">
+                        <ul class="row">
+                          <ul class="list-unstyled col-3">
+                            <li>Tenent Id</li>
+                            <li>1101</li>
+                            <li>11025</li>
+                            <li>11014</li>
+                            <li>1101</li>
+                            <li>11025</li>
+                            <li>11014</li>
+                          </ul>
+                           <ul class="list-unstyled col-4">
+                             <li>Invoiced To</li>
+                             <li>Ayush</li>
+                             <li>Chaman</li>
+                              <li>Anurag</li>
+                             <li>Amit</li>
+                              <li>Krishna</li>
+                             <li>Deepu</li>
+                          </ul>
+                           <ul class="list-unstyled col-3">
+                             <li>Phone No</li>
+                             <li>9520261150</li>
+                             <li>8218246898</li>
+                              <li>9520261150</li>
+                             <li>8218246898</li>
+                             <li>9520261150</li>
+                             <li>8218246898</li>
+                          </ul>
+                        </dl>
+
+                    </div>
+                    <div class="footer">
+                      <a class="btn justify-content-center" href="#">View All</a>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+
+
+
+
+
+
+      <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Already want to leave?</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            It is sad to see you go. Please Press Logout to leave.
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Stay Here
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script>
+      $(".navbar-toggler").html(
+        '<i class="fa fa-arrow-down fa-3x text-white"></i>'
+      );
+    </script>
+</body>
+</html>

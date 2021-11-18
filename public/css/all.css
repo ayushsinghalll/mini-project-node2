@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
+body {
+  font-family: "Mali", cursive;
+  background: white;
+  color: black;
+}
+html{
+  scroll-behavior: smooth;
+}
+/*navbar*/
+.navbar{
+  background:#00000094;
+}
+.navbar .btn {
+  background: transparent;
+  border: 0.1 rem solid white;
+  color: white
+}
+
+.navbar .btn:hover {
+  background: grey;
+  color: lightgreen;
+
+}
+
+/*end of navbar*/
+/*header section */
+#header{
+  min-height: 75vh;
+  background:
+  url(/images/castle-creek-valley-house-1.jpg);
+  background-position:center ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+
+}
+
+
+/*end of header section*/
+
+
+.text-slant {
+  font-family: "Caveat", cursive;
+}
+.title-underline {
+  width: 12rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.title-underline__center {
+  position: absolute;
+  height: 0.6rem;
+  background: lightgreen;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+
+/*About Section*/ 
+
+#about-us a {
+  text-decoration: none;
+  color:black;
+}
+#about-us .card-header{
+  background-color: cornflowerblue;
+}
+/*END of about section*/
+/*team sectiom*/
+
+#team .card img{
+  margin-top: -50px;
+
+}
+#team .card hr{
+  background-color: darkgreen;
+
+}
+#team .card .fab{
+  color:darkgreen;
+  font-size: 30px;
+
+}
+#team .card .fab:hover{
+  color:blueviolet;
+}
+
+/*end of team section*/
+/*Gallery section*/
+.gallery-btn:hover{
+  background: lightgreen;
+  color :white;
+}
+.gallery-img-container{
+  position: relative;
+  transition: all 1s linear;
+  overflow: hidden ;
+}
+.gallery-img-container:hover{
+  background: rgba(0,0,0,0.9);
+}
+.gallery-img{
+  transition: all 1s linear;
+}
+.gallery-img-container:hover .gallery-img{
+  opacity: 0.3;
+}
+.gallery-info{
+  position:absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,100%);
+  background: lightgreen;
+  color:white;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  }
+  .gallery-info:hover{
+    text-decoration: none;
+    color: black;
+     
+  }
+  .gallery-img-container:hover .gallery-info{
+    transform: translate(-50%,0);
+  }
+  .gallery-icon{
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 03.s linear;
+    cursor: pointer;
+  }
+  .gallery-img-container:hover .gallery-icon{
+    opacity: 1;
+
+  }
+
+
+/*End of gallery section*/
+/*featuered*/
+.featured{
+  background: lightgrey;
+}
+.img-container {
+  position: relative;
+}
+.featured-icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.featured-icon-left {
+  background: var(--mainDark);
+  padding: 0.5rem;
+  display: inline-block;
+  color: var(--mainWhite);
+}
+
+.featured-icon-right {
+  background: var(--mainGreen);
+  padding: 0.5rem;
+  display: inline-block;
+  color: var(--mainWhite);
+}
+
+/*end of featured*/
+/*Number Section*/
+#numbers .num {
+  padding: 30px 0;
+  background: #242a33;
+  color: #f5f3f5;
+}
+
+#numbers .num:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+#numbers .num-item {
+  font-size: 30px;
+}
+
+#numbers .fa {
+  font-size: 60px;
+}
+/*End of  number Section*/
+/*conatct */
+.contact{
+  background: lightgreen;
+  color:white;
+}
+.contact-btn{
+  background: transparent ;
+  border: 0.1rem solid white;
+  color:white
+
+}
+.contact-btn:hover{
+  background: white;
+  color:lightgreen;
+
+}
+/*end of contact*/
+/*quote*/
+#quotes{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url();
+  background-attachment: fixed;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:white;
+  }
+  #quotes .fa-quote-left{
+    font-size: 40px;
+    color:whitesmoke;
+      }
+      #quotes img{
+        max-width: 250px;
+      }
+/*end of quote*/
+#service  .fab {
+  color: darkgreen;
+  font-size: 30px;
+
+}
+#service .fab:hover {
+  color: blueviolet;
+}
+.footer{
+  background-color: aquamarine;
+}
+
+.footer h5 {
+  color:orange;
+  font-weight: bold;
+}
+#user-card-footer .btn {
+ background: transparent;
+ border: 0.1 rem solid white;
+ color: black;
+ }
+#user-card-footer .btn:hover{
+background: white;
+color: rebeccapurple;
+}
+
+#contact-model .card-body{
+  background: Yellow;
+}
+.breadcrumb{
+  background-color: white;
+}
